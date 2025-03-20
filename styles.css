@@ -20,6 +20,11 @@ body {
     display: flex;
     padding: 2rem 2rem;
     flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 }
 
 .nav-links{
@@ -163,20 +168,6 @@ footer{
 }
 
 @media (min-width: 600px) {
-    .info{
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        background-color: black;
-        color: white;
-        display: flex;
-        padding: 2rem 2rem;
-        flex-direction: column;
-        margin: 0 auto;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-    }
 
     .video-mobile {
         display: none;

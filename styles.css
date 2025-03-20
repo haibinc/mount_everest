@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: black;
+    font-family: "Cinzel", sans-serif;
+}
+
+.landing {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.info{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 2rem 2rem;
+    flex-direction: column;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: auto;
+    right: 2.5rem;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.8);
+    min-width: 200px;
+    display: none;
+}
+
+.dropdown-menu a {
+    list-style: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.description{
+    font-weight: 200;
+    padding-left: 1rem;
+    text-decoration: underline;
+}
+
+.everestpics img{
+    width: 23rem;
+    height: 20rem;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.descriptionBox{
+    max-width: 300px;
+    margin-top:1rem;
+    border: 1px solid white;
+    width: 80%;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+}
+
+.logo img{
+    padding: 1rem 1.5rem;
+    max-width:10rem;
+    max-height:10rem;
+    opacity: 0;
+    animation: fadeIn 5s ease-in 2s forwards;
+}
+
+.everest-video {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.explore{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: ghostwhite;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out 10s forwards;
+}
+
+.menu img{
+    padding-top: 1.3rem;
+    padding-right: 2rem;
+    opacity: 0;
+    max-width: 2.5rem;
+    animation: fadeIn 5s ease-in 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        display: none;
+        opacity: 0;
+    }
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.video-mobile {
+    display: block;
+}
+.video-desktop {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .info{
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        background-color: black;
+        color: white;
+        display: flex;
+        padding: 2rem 2rem;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .video-mobile {
+        display: none;
+    }
+    .video-desktop {
+        display: block
+    }
+}
+
+
